@@ -17,8 +17,8 @@ class Main extends Component {
     }
 
     fetchSatellite = (setting) => {
-      const {observerLat, observerLong, observerAlt, radious} = setting;
-      const url = `${NEARBY_SATELLITE}/${observerLat}/${observerLong}/${observerAlt}/${radious}/${STARLINK_CATEGORY}/&apiKey=${SAT_API_KEY}`;
+      const {observerLat, observerLong, observerAlt, radius} = setting;
+      const url = `${NEARBY_SATELLITE}/${observerLat}/${observerLong}/${observerAlt}/${radius}/${STARLINK_CATEGORY}/&apiKey=${SAT_API_KEY}`;
 
       this.setState({
         loadingSatellites: true,
